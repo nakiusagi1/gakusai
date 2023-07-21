@@ -3,7 +3,7 @@
 	// ChatGPT APIレスポンス処理
 
 	// API_KEYをセット
-	define('API_KEY', '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');
+	define('API_KEY', 'sk-');
 
 	// ----------------------------------------------------------------------------------------------
 
