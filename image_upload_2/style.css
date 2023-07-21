@@ -1,0 +1,26 @@
+body {
+	margin:0px;
+	font-family: Arial, Helvetica, "���C���I", "HiraKakuPro-W3", "�q���M�m�p�S Pro W3", "�l�r �o�S�V�b�N", "Osaka";
+	line-height:1.5em;
+}
+section {
+	padding:30px;
+	box-sizing:border-box;
+}
+header {
+	color:#FFFFFF;
+	background-color:#38B9CF;
+	padding:15px 15px 15px 30px;
+}
+header h1 {
+	margin:0px;
+	font-size:16pt;
+	font-weight:bold;
+}
+#loading {
+	margin-top:15px;
+	display: none;
+}
+#loading img {
+	vertical-align:middle;
+}
