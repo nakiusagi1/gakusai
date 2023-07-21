@@ -1,0 +1,56 @@
+﻿=======================================
+食材の画像からレシピを提案するWebアプリ
+作成者: 安藤
+作成日: 2023/07/21
+=======================================
+
+【動作環境】
+PHP7（cURL必須）
+Webブラウザ（Google Chrome動作確認済み）
+
+【ディレクトリ構成】
+・image_upload_2フォルダ内
+index.php
+detect.php
+rmdir.php
+uploads/
+	├ 投稿された画像ファイルを保存する。
+results/
+	├ 物体検出結果が書かれたテキストファイルを保存する。
+css/
+	├ style.css
+img/
+	├ loading.gif
+js/
+	├ loading.js
+
+・text_to_recipeフォルダ内
+index.php
+css/
+	├ style.css
+data/
+	├ data.txt
+img/
+	├ loading.gif
+js/
+	├ chatapi.js
+php/
+	├ chatapi.php
+	├ get-history.php
+	├ reset.php
+	├ save.php
+
+・yolov5フォルダ内
+with_chi_cabbage_best.pt （重みファイル）
+残りは省略（yolov5をダウンロードした場合と同じため）
+
+【インストール方法】
+1. php/chatapi.phpの6行目API_KEYを、取得したAPIキーに書き換える
+	修正前: define(API_KEY, 'sk-');
+	修正後: define(API_KEY, 'sk-*************************');
+
+2. すべてのファイルをアップロード
+
+3. アップロードしたユーザとPHPの実行権限が異なる場合、data/data.txtに書き込み権限を与える
+
+4. https://（アップロードした場所）/text_to_recipe/index.phpにアクセス
